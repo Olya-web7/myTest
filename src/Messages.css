@@ -1,0 +1,16 @@
+.wrapper {
+  border: 1px solid #EFECF3;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin: 24px;
+  width: 922px;
+  height: 54px;
+}
+
+.text {
+  color: #9691A4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 16px 27px;
+}
