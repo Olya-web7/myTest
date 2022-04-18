@@ -1,10 +1,12 @@
 import './App.css';
-import User from './user';
+import Table from './Table';
+// import User from './user';
+import { Users } from './Users';
 
 function App() {
   return (
     <div className="app">
-      <User />
+      <Table data={Users}/>
     </div>
   );
 }

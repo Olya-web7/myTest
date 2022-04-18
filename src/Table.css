@@ -1,5 +1,7 @@
 .wrapper {
-  border: #EFECF3;
+  border: 1px solid #EFECF3;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .title {
