@@ -1,10 +1,10 @@
-.wrapper {
+.wrapper_messages {
   border: 1px solid #EFECF3;
   box-sizing: border-box;
   border-radius: 12px;
-  margin: 24px;
-  width: 922px;
-  height: 54px;
+  margin: 44px;
+  /* width: 922px;
+  height: 54px; */
 }
 
 .text {

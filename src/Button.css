@@ -1,0 +1,16 @@
+button {
+  text-align: right;
+  background-color: #D9E8F2;
+  color: #454056;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 24px;
+}
+
+.wrapper_button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 44px;
+}
