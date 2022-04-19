@@ -1,6 +1,5 @@
 import React from 'react';
 import './Btn.css';
-import './assets/send.jpg';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 function Btn() {

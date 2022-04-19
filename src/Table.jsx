@@ -1,6 +1,6 @@
 import React from 'react';
 import './Table.css';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Avatar } from '@mui/material';
 
 function Table({ data }) {
   return (
@@ -9,7 +9,7 @@ function Table({ data }) {
         <ul className="list">
           {data.map((item) => (
             <li key={item.id} className="listItem">
-              <AccountCircleIcon />
+              <Avatar className='icon' src='./assets/3.svg' />
               <p>{item.name}</p>
               <p>{item.role}</p>
               <p>{item.email}</p>

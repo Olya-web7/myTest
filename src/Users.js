@@ -5,6 +5,7 @@ export const Users = [
     'email': 'alexanderarch@gmail.com',
     'role': 'architect',
     'color': '#DAF4C6',
+    'src': '',
   },
   {
     'id': 2,
@@ -12,6 +13,7 @@ export const Users = [
     'email': 'provisrin@gmail.com',
     'role': 'owner',
     'color': '#F8D7E2',
+     'src': '',
   },
   {
     'id': 3,
@@ -19,6 +21,7 @@ export const Users = [
     'email': 'fialka27@gmail.com',
     'role': 'engineer',
     'color': '#D7DEF8',
+     'src': './assets/3.svg',
   },
   {
     'id': 4,
@@ -26,5 +29,6 @@ export const Users = [
     'email': 'manager_royl@gmail.com',
     'role': 'manager',
     'color': '#F8EDD7',
+     'src': '',
   }
 ]

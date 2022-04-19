@@ -10,7 +10,7 @@ function Files({ data }) {
       <ul className="list">
           {data.map((item) => (
             <li key={item.id} className="listItem">
-              <InsertDriveFileOutlinedIcon sx={{ color: item.color }}/>
+              <InsertDriveFileOutlinedIcon sx={{ color: item.color }} className='icon'/>
               <p>{item.name}</p>
             </li>
           ))}
