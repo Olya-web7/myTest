@@ -25,8 +25,18 @@
 
 .listItem > p {
   margin-right: 10px;
+  color: #666276;
 }
 
 .icon {
   margin-right: 6px;
+}
+
+.role {
+  background-color: #F8D7E2;
+  border: none;
+  border-radius: 8px;
+  color: #666276;
+  margin: 10px;
+  padding: 6px 12px;
 }
