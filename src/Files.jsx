@@ -1,5 +1,6 @@
 import React from 'react';
 import './Files.css';
+import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 
 function Files({ data }) {
   return (
@@ -9,6 +10,7 @@ function Files({ data }) {
       <ul className="list">
           {data.map((item) => (
             <li key={item.id} className="listItem">
+              <InsertDriveFileOutlinedIcon sx={{ color: item.color }}/>
               <p>{item.name}</p>
             </li>
           ))}
