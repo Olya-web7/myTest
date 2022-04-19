@@ -3,9 +3,8 @@ import './Table.css';
 
 function Table({ data }) {
   return (
-    <table className='wrapper_table'>
+    <div className='wrapper_table'>
       <h1 className='title'>Selected Files</h1>
-      <div className="container">
         <ul className="list">
           {data.map((item) => (
             <li key={item.id} className="listItem">
@@ -15,8 +14,7 @@ function Table({ data }) {
             </li>
           ))}
         </ul>
-      </div>
-    </table>
+    </div>
   )
 }
 
