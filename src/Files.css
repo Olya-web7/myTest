@@ -1,14 +1,14 @@
-.wrapper_messages {
+.wrapper_files {
   border: 1px solid #EFECF3;
   box-sizing: border-box;
   border-radius: 12px;
   margin: 44px;
 }
 
-.text {
-  color: #9691A4;
+.title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 16px;
-  margin: 16px 27px;
+  line-height: 19.5px;
+  font-weight: 500;
+  color: #666276;
 }
