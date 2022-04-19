@@ -14,3 +14,16 @@ button {
   justify-content: flex-end;
   margin-right: 44px;
 }
+
+.btn_send {
+  font-family: 'Montserrat', sans-serif;
+  color: #454056;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px;
+  color:#454056;
+  font-weight: light;
+}

@@ -1,5 +1,5 @@
 import './App.css';
-import Button from './Button';
+import Btn from './Btn';
 import Messages from './Messages';
 import Table from './Table';
 import { Users } from './Users';
@@ -9,7 +9,7 @@ function App() {
     <div className="app">
       <Table data={Users}/>
       <Messages />
-      <Button />
+      <Btn />
     </div>
   );
 }

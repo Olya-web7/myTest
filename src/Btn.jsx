@@ -1,0 +1,17 @@
+import React from 'react';
+import './Btn.css';
+import './assets/send.jpg';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+
+function Btn() {
+  return (
+    <div className='wrapper_button'>
+      <button className='btn_send'>
+        <EmailOutlinedIcon className='icon' />
+        Send
+      </button>
+    </div>
+  )
+}
+
+export default Btn;
