@@ -12,7 +12,7 @@ button {
 .wrapper_button {
   display: flex;
   justify-content: flex-end;
-  margin-right: 44px;
+  margin: 44px;
 }
 
 .btn_send {
