@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Table.css';
 import { Avatar } from '@mui/material';
 
-function Table({ data }) {
-  const [seed, setSeed] = useState('');
-
-  useEffect(() => {
-    setSeed(Math.floor(Math.random() * 500));
-  }, []);
+function MyTable({ data }) {
 
   return (
     <div className='wrapper_table'>
@@ -15,7 +10,7 @@ function Table({ data }) {
         <ul className="list">
           {data.map((item) => (
             <li key={item.id} className="listItem">
-              <Avatar className='icon' src={`https://avatars.dicebear.com/api/bottts/${seed}.svg`} />
+              <Avatar className='icon' />
               <p>{item.name}</p>
               <p className='role' >{item.role}</p>
               <p>{item.email}</p>
@@ -26,4 +21,4 @@ function Table({ data }) {
   )
 }
 
-export default Table
+export default MyTable
