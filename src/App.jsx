@@ -1,5 +1,6 @@
 import './App.css';
 import Btn from './Btn';
+import Datatable from './datatable/Datatable';
 import Files from './Files';
 import { FilesList } from './FilesList';
 import Messages from './Messages';
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="app">
       <Files data={FilesList}/>
+      <Datatable />
       <MyTable data={Users}/>
       <Messages />
       <Btn />

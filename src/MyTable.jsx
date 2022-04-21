@@ -11,7 +11,7 @@ function MyTable({ data }) {
           {data.map((item) => (
             <li key={item.id} className="listItem">
               <Avatar src={item.image} 
-                sx={{ width: 30, height: 30 }}>{item.name[0]}</Avatar>
+                sx={{ width: 30, height: 30, backgroundColor: item.color }}>{item.name[0]}</Avatar>
               <p>{item.name}</p>
               <p className='role' >{item.role}</p>
               <p>{item.email}</p>
