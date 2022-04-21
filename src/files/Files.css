@@ -14,11 +14,18 @@
   margin: 10px;
 }
 
-.listItem {
+.listItem_files {
+  display: flex;
+  justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #666276;
+}
+
+.file_name {
+  display: flex;
+  align-items: center;
 }
 
 .icon {

@@ -11,9 +11,11 @@ function Files({ data }) {
 
       <ul className="list">
           {data.map((item) => (
-            <li key={item.id} className="listItem">
-              <InsertDriveFileOutlinedIcon sx={{ color: item.color }} className='icon'/>
-              <p>{item.name}</p>
+            <li key={item.id} className="listItem_files">
+              <div className='file_name'>
+                <InsertDriveFileOutlinedIcon sx={{ color: item.color }} className='icon'/>
+                <p>{item.name}</p>
+              </div>
               <Checkbox sx={{color: grey[600], '&.Mui-checked': {color: orange[600]}}}/>
             </li>
           ))}
