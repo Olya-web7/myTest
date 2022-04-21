@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app">
       <Files data={FilesList}/>
-      <Datatable />
+      <Datatable data={Users}/>
       <MyTable data={Users}/>
       <Messages />
       <Btn />

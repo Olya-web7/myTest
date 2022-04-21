@@ -1,45 +1,30 @@
 import React from 'react';
 import './Datatable.css';
 import { DataGrid } from '@mui/x-data-grid';
+import { Avatar } from '@mui/material';
 
 const columns = [
-  { field: 'id', headerName: 'ID', width: 70 },
-  { field: 'firstName', headerName: 'First name', width: 130 },
-  { field: 'lastName', headerName: 'Last name', width: 130 },
-  {
-    field: 'age',
-    headerName: 'Age',
-    type: 'number',
-    width: 90,
-  },
-  {
-    field: 'fullName',
-    headerName: 'Full name',
-    description: 'This column has a value getter and is not sortable.',
-    sortable: false,
-    width: 160,
-    valueGetter: (params) =>
-      `${params.row.firstName || ''} ${params.row.lastName || ''}`,
-  },
+  { field: 'id', headerName: '', width: 70 },
+  { field: 'name', headerName: '', width: 130, renderCell: (params)=>{
+    return (
+      <div className="cellWithImg">
+        <Avatar src={params.row.image} alt="avatar" className="cellImg" />
+        <p>{params.row.name}</p>
+      </div>
+    )
+  } },
+ 
 ];
 
-const rows = [
-  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },  
-];
-
-export default function Datatable() {
+export default function Datatable({data}) {
   
   return (
     <div className='datatable'>
       <DataGrid
-        rows={rows}
+        rows={data}
         columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
         checkboxSelection
+        pageSize={4}
       />
     </div>
   )

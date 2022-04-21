@@ -5,7 +5,7 @@ export const Users = [
     'email': 'alexanderarch@gmail.com',
     'role': 'architect',
     'color': '#DAF4C6',
-    'image': '',
+    'image': '/assets/user1.jpg',
   },
   {
     'id': 2,
@@ -13,7 +13,7 @@ export const Users = [
     'email': 'provisrin@gmail.com',
     'role': 'owner',
     'color': '#F8D7E2',
-    'image': "../assets/user2.jpg",
+    'image': "./assets/user2.jpg",
   },
   {
     'id': 3,
@@ -29,6 +29,6 @@ export const Users = [
     'email': 'manager_royl@gmail.com',
     'role': 'manager',
     'color': '#F8EDD7',
-    'image': '',
+    'image': './assets/user4.jpg',
   }
 ]
