@@ -69,3 +69,11 @@
 .table_container {
   display: flex;
 }
+
+.table_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {margin-right: 17px;}
