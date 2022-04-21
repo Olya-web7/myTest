@@ -10,7 +10,7 @@ function MyTable({ data }) {
         <ul className="list">
           {data.map((item) => (
             <li key={item.id} className="listItem">
-              <Avatar src={item.image} 
+              <Avatar src={item.image} className="icon"
                 sx={{ width: 30, height: 30, backgroundColor: item.color }}>{item.name[0]}</Avatar>
               <p>{item.name}</p>
               <p className='role' >{item.role}</p>

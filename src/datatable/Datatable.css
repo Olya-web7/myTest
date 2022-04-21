@@ -5,3 +5,8 @@
   border-radius: 12px;
   margin: 44px;
 }
+
+.cellWithImg {
+  display: flex;
+  align-items: center;
+}
