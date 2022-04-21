@@ -7,7 +7,7 @@ import { grey, orange } from '@mui/material/colors';
 function Files({ data }) {
   return (
     <div className='wrapper_files'>
-      <h1 className='title'>Selected Files</h1>
+      <h1 className='title_files'>Selected Files</h1>
 
       <ul className="list">
           {data.map((item) => (
