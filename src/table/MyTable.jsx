@@ -1,12 +1,12 @@
 import React from 'react';
 import './MyTable.scss';
 import { Avatar } from '@mui/material';
-// import Box from '@mui/material/Box';
+import Box from '@mui/material/Box';
 import Checkbox from '@mui/material/Checkbox';
-// import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControlLabel from '@mui/material/FormControlLabel';
 import { grey, orange } from '@mui/material/colors';
 
-function MyTable({ data }) {
+export default function MyTable({ data }) {
   return (
     <div className='wrapper_table'>
       <h1 className='title'>Selected Files</h1>
@@ -29,5 +29,3 @@ function MyTable({ data }) {
     </div>
   )
 }
-
-export default MyTable
