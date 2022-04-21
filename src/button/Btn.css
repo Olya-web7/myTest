@@ -22,8 +22,8 @@ button {
   align-items: center;
 }
 
-.icon {
+.icon_btn {
   margin-right: 8px;
   color:#454056;
-  font-weight: light;
+  font-weight: lighter;
 }
