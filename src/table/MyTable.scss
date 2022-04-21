@@ -1,4 +1,5 @@
 .wrapper_table {
+  display: grid;
   border: 1px solid #EFECF3;
   box-sizing: border-box;
   border-radius: 12px;
@@ -30,6 +31,10 @@
 
 .icon {
   margin-right: 6px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .role {

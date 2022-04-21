@@ -1,6 +1,8 @@
 import React from 'react';
 import './Files.css';
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
+import { Checkbox } from '@mui/material';
+import { grey, orange } from '@mui/material/colors';
 
 function Files({ data }) {
   return (
@@ -12,6 +14,7 @@ function Files({ data }) {
             <li key={item.id} className="listItem">
               <InsertDriveFileOutlinedIcon sx={{ color: item.color }} className='icon'/>
               <p>{item.name}</p>
+              <Checkbox sx={{color: grey[600], '&.Mui-checked': {color: orange[600]}}}/>
             </li>
           ))}
         </ul>
