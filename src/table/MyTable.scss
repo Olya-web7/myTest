@@ -1,4 +1,5 @@
 .wrapper_table {
+  display: grid;
   border: 1px solid #EFECF3;
   box-sizing: border-box;
   border-radius: 12px;
@@ -11,7 +12,7 @@
   line-height: 19.5px;
   font-weight: 500;
   color: #666276;
-  margin: 10px;
+  margin: 24px 30px 14px;
 }
 
 .listItem {
@@ -30,6 +31,10 @@
 
 .icon {
   margin-right: 6px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .role {
@@ -39,4 +44,27 @@
   color: #666276;
   margin: 10px;
   padding: 6px 12px;
+
+  &.architect {
+    background-color: #DAF4C6;
+  }
+  &.owner {
+    background-color: #F8D7E2;
+  }
+  &.engineer {
+    background-color: #D7DEF8;
+  }
+  &.manager {
+    background-color: #F8EDD7;
+  }
+}
+
+.name_avatar {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.table_container {
+  display: flex;
 }

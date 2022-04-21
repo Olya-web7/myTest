@@ -12,7 +12,7 @@ button {
 .wrapper_button {
   display: flex;
   justify-content: flex-end;
-  margin-right: 44px;
+  margin: 122px 44px 60px;
 }
 
 .btn_send {
@@ -22,8 +22,8 @@ button {
   align-items: center;
 }
 
-.icon {
+.icon_btn {
   margin-right: 8px;
   color:#454056;
-  font-weight: light;
+  font-weight: lighter;
 }

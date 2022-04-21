@@ -6,7 +6,7 @@ function Btn() {
   return (
     <div className='wrapper_button'>
       <button className='btn_send'>
-        <EmailOutlinedIcon className='icon' />
+        <EmailOutlinedIcon className='icon_btn' />
         Send
       </button>
     </div>

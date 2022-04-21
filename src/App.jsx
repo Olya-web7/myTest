@@ -1,16 +1,16 @@
 import './App.css';
-import Btn from './Btn';
-import Files from './Files';
-import { FilesList } from './FilesList';
-import Messages from './Messages';
-import Table from './Table';
-import { Users } from './Users';
+import Btn from './button/Btn';
+import Files from './files/Files';
+import { FilesList } from './files/FilesList';
+import Messages from './message/Messages';
+import MyTable from './table/MyTable';
+import { Users } from './table/Users';
 
 function App() {
   return (
     <div className="app">
       <Files data={FilesList}/>
-      <Table data={Users}/>
+      <MyTable data={Users}/>
       <Messages />
       <Btn />
     </div>

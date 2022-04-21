@@ -5,22 +5,29 @@
   margin: 44px;
 }
 
-.title {
+.title_files {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 19.5px;
   font-weight: 500;
   color: #666276;
-  margin: 10px;
+  margin: 24px 30px 14px;
 }
 
-.listItem {
+.listItem_files {
+  display: flex;
+  justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #666276;
 }
 
-.icon {
+.file_name {
+  display: flex;
+  align-items: center;
+}
+
+.icon_files {
   margin-right: 8px;
 }
