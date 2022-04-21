@@ -1,27 +1,19 @@
 import React from 'react';
 import './MyTable.scss';
 import { Avatar } from '@mui/material';
-import Box from '@mui/material/Box';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { grey, orange } from '@mui/material/colors';
+import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
+import { CheckCircle } from '@mui/icons-material';
 
 export default function MyTable({ data }) {
 
   const [checked, setChecked] = React.useState([true, false]);
 
-  const handleChange1 = (event) => {
+  const handleChange = (event) => {
     setChecked([event.target.checked, event.target.checked]);
   };
-
-  const handleChange2 = (event) => {
-    setChecked([event.target.checked, checked[1]]);
-  };
-
-  const handleChange3 = (event) => {
-    setChecked([checked[0], event.target.checked]);
-  };
-
 
   return (
     <div className='wrapper_table'>      
@@ -33,10 +25,11 @@ export default function MyTable({ data }) {
           <FormControlLabel
                   control={
                     <Checkbox
-                      checked={checked[0] && checked[1]}
-                      indeterminate={checked[0] !== checked[1]}
-                      onChange={handleChange1}
                       sx={{color: grey[700], '&.Mui-checked': {color: orange[800]}}}
+                      icon={<CircleOutlinedIcon />}
+                      checkedIcon={<CheckCircle />}
+                      checked={checked}
+                      onChange={handleChange}
                     />
                   }
                 />
@@ -56,7 +49,6 @@ export default function MyTable({ data }) {
                 <p>{item.email}</p>
               </div>
               <Checkbox sx={{color: grey[700], '&.Mui-checked': {color: orange[800]}}}
-                checked={checked} onChange={handleChange1}
                 />
             </li>
           ))}
