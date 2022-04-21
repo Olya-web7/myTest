@@ -5,7 +5,7 @@ export const Users = [
     'email': 'alexanderarch@gmail.com',
     'role': 'architect',
     'color': '#DAF4C6',
-    'img': '',
+    'image': '',
   },
   {
     'id': 2,
@@ -13,7 +13,7 @@ export const Users = [
     'email': 'provisrin@gmail.com',
     'role': 'owner',
     'color': '#F8D7E2',
-     'img': '',
+    'image': "../assets/user2.jpg",
   },
   {
     'id': 3,
@@ -21,7 +21,7 @@ export const Users = [
     'email': 'fialka27@gmail.com',
     'role': 'engineer',
     'color': '#D7DEF8',
-     'img': './assets/3.svg',
+    'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIa8prwJmF2RNrwmz5tSs3UeHHISrlxAC0DQ&usqp=CAU',
   },
   {
     'id': 4,
@@ -29,6 +29,6 @@ export const Users = [
     'email': 'manager_royl@gmail.com',
     'role': 'manager',
     'color': '#F8EDD7',
-     'img': '',
+    'image': '',
   }
 ]

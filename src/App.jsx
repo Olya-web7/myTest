@@ -3,7 +3,7 @@ import Btn from './Btn';
 import Files from './Files';
 import { FilesList } from './FilesList';
 import Messages from './Messages';
-import MyTable from './Table';
+import MyTable from './MyTable';
 import { Users } from './Users';
 
 function App() {
