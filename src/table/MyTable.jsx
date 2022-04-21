@@ -12,7 +12,7 @@ export default function MyTable({ data }) {
   const [checked, setChecked] = React.useState([true, false]);
 
   const handleChange = (event) => {
-    setChecked([event.target.checked, event.target.checked]);
+    setChecked(event.target.checked);
   };
 
   return (
@@ -49,7 +49,7 @@ export default function MyTable({ data }) {
                 <p>{item.email}</p>
               </div>
               <Checkbox sx={{color: grey[700], '&.Mui-checked': {color: orange[800]}}}
-                />
+                checked={checked}/>
             </li>
           ))}
         </ul>
