@@ -1,5 +1,5 @@
 import React from 'react';
-import './MyTable.css';
+import './MyTable.scss';
 import { Avatar } from '@mui/material';
 
 function MyTable({ data }) {
@@ -13,7 +13,7 @@ function MyTable({ data }) {
               <Avatar src={item.image} className='icon'
                 sx={{ width: 30, height: 30, backgroundColor: item.color }}>{item.name[0]}</Avatar>
               <p>{item.name}</p>
-              <p className='role' >{item.role}</p>
+              <p className={`role ${item.role}`} >{item.role}</p>
               <p>{item.email}</p>
             </li>
           ))}

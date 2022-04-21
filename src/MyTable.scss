@@ -39,4 +39,17 @@
   color: #666276;
   margin: 10px;
   padding: 6px 12px;
+
+  &.architect {
+    background-color: #DAF4C6;
+  }
+  &.owner {
+    background-color: #F8D7E2;
+  }
+  &.engineer {
+    background-color: #D7DEF8;
+  }
+  &.manager {
+    background-color: #F8EDD7;
+  }
 }
