@@ -19,8 +19,7 @@ function Files({ data }) {
               <Checkbox sx={{color: grey[700], '&.Mui-checked': {color: orange[800]}}}/>
             </li>
           ))}
-        </ul>
-        
+        </ul>        
     </div>
   )
 }
