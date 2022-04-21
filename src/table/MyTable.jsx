@@ -9,7 +9,7 @@ import { CheckCircle } from '@mui/icons-material';
 
 export default function MyTable({ data }) {
 
-  const [checked, setChecked] = React.useState([true, false]);
+  const [checked, setChecked] = React.useState([]);
 
   const handleChange = (event) => {
     setChecked(event.target.checked);
@@ -49,7 +49,7 @@ export default function MyTable({ data }) {
                 <p>{item.email}</p>
               </div>
               <Checkbox sx={{color: grey[700], '&.Mui-checked': {color: orange[800]}}}
-                checked={checked} onClick={handleChange}/>
+                checked={checked} onChange={handleChange}/>
             </li>
           ))}
         </ul>
